@@ -33,21 +33,26 @@
           launch deals.
         </p>
         <form novalidate class="form">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <button type="submit" class="btn-submit">
-            <img src="./images/icon-arrow.svg" alt="icon-arrow" />
-          </button>
+          <div class="form-wrap">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <button type="submit" class="btn-submit">
+              <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
+          </div>
         </form>
       </section>
       <section class="hero">
         <picture>
-          <source srcset="./images/hero-mobile.jpg" media="(max-width: 768px)">
-          <img src="./images/hero-desktop.jpg" alt="Hero desktop">
+          <source
+            srcset="./images/hero-mobile.jpg"
+            media="(max-width: 768px)"
+          />
+          <img src="./images/hero-desktop.jpg" alt="Hero desktop" />
         </picture>
       </section>
     </main>
@@ -60,5 +65,7 @@
         >. Coded by <a href="#">Yevheniia Voitsekhovska</a>.
       </p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

@@ -94,16 +94,21 @@ body {
   text-align: left;
 }
 
+.form-wrap {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+
 .form input {
   border: 1px solid var(--primary-pink);
   color: var(--primary-pink);
   background-color: transparent;
   border-radius: 30px;
-  padding: 17px 30px;
+  padding: 17px 80px 17px 30px;
   font-size: 16px;
-  width: 50%;
   font-family: "Josefin Sans", sans-serif;
-  position: relative;
+  flex: 1;
 }
 .form input::placeholder {
   color: var(--primary-pink);
@@ -117,20 +122,25 @@ body {
 }
 
 .btn-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--dark-gradient);
   border: 1px solid var(--dark-gradient);
   padding: 15px 45px;
   border-radius: 30px;
-  position: absolute;
-  transform: translateX(-40px);
-  transform-origin: center right;
   cursor: pointer;
   box-shadow: 0px 10px 20px hsla(0, 36%, 70%, 0.5);
   transition: all 0.2s ease-in;
 }
 .btn-submit:hover {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 71%, 88%));
-  transform: translateX(-40px) scale(1.05);
+  transform: scale(1.07);
 }
 
 /* STYLES FOR ERRORS */
@@ -139,15 +149,16 @@ body {
   color: var(--primary-red);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 15px 30px;
+  text-align: left;
 }
 
 .form .error-style {
   border: 2px solid var(--primary-red);
   background-image: url(./images/icon-error.svg);
   background-repeat: no-repeat;
-  background-position: right 50px center;
-  padding-right: 70px;
+  background-position: right 110px center;
+  padding-right: 80px;
 }
 
 /* FOOTER */
@@ -199,7 +210,8 @@ body {
   .title {
     font-size: 50px;
   }
-  .description, .title {
+  .description,
+  .title {
     width: 100%;
     text-align: center;
   }
@@ -217,13 +229,10 @@ body {
   .form {
     width: 100%;
   }
-  .form input {
+  .form-wrap {
     width: 90%;
   }
   .btn-submit {
     padding: 15px 35px;
-    transform: translateX(-60px);
   }
 }
-
-
