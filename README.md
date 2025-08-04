@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-solution](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-solution-rvbNIWDms7)
 - Live Site URL: [https://voitsekhovska.github.io/base-apparel](https://voitsekhovska.github.io/base-apparel/)
 
 ## My process
